@@ -95,10 +95,10 @@ const ProductList = () => {
           return (
             <div
               key={i}
-              className="w-[260px] my-6 py-4 flex justify-center flex-col items-center shadow-md hover:shadow-lg rounded-md scale-100 
+              className="w-[260px] my-6 py-4 flex justify-center flex-col items-center shadow-xl hover:shadow-lg rounded-md scale-100 
               hover:scale-105 duration-500">
               <div
-                className="w-[220px] rounded-2xl shadow-xl hover:shadow-lg rounded- scale-100 
+                className="w-[220px] rounded-2xl shadow-md hover:shadow-lg rounded- scale-100 
                 hover:scale-105 duration-500">
                 <img
                   src={pro.img}
@@ -107,18 +107,26 @@ const ProductList = () => {
                 />
               </div>
               <div className=" w-[80%] flex justify-start flex-col items-start">
-                <h4 className="text-center py-2 font-[400] text-[14px] hover:cursor-pointer hover:text-blue-500">
+                <div className=" w-[100%] flex flex-col items-start">
+                <h4 className="text-center py-2 font-[400] text-[14px] hover:cursor-pointer hover:text-black-500 hover:font-bold duration-500 hover:translate-x-2">
                   {pro.name}
                 </h4>
+              <div>
               
-                <p className="text-center  font-[400]  hover:cursor-pointer hover:text-blue-500">
-                 RS.215
-                </p>
+                <div className="text-[12px] font-[600] gap-4 w-[100%]">
+                    Rs. 300{" "}
+                    <span className="text-grey-400 line-through">Rs. 500</span>
+                    <span className="text-red-400 ">(10% OFF)</span>
+                  </div>
+              </div>
+                
+                </div>
+               
                 <div className="flex justify-center w-full gap-4 pt-2">
                
-               <p className="text-center  bg-yellow-600 rounded-md p-1 px-8  hover:cursor-pointer hover:text-blue-500">
-                add cart
-               </p>
+                <div className="bg-orange-500 mb-2 w-[100%] mx-auto text-center py-2 rounded-md text-white ">
+                Add to Cart
+              </div>
               
                </div>
                 

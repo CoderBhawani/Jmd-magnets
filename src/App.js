@@ -3,8 +3,8 @@ import Home from "./screens/home";
 
 function App() {
   return (
-    <div className="">
-<Home/>
+    <div className="bg-white">
+<Home />
     </div>
   );
 }
