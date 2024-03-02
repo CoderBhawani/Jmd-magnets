@@ -1,0 +1,11 @@
+.contactBgBanner {
+  background-image: url(./contactImg/contactbanner.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: cover;
+}
+
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}

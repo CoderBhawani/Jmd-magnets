@@ -72,21 +72,20 @@ export default function HomeSlider() {
     >
       {bestseller.map((prod, i) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <div className="w-full bg-gray-100">
-            <div className="  w-full md:w-[80%] relative  flex justify-between bg-gray-100 mx-auto h-[35vh] md:h-[70vh] ">
-              <div className="w-[45%] flex flex-col  md:justify-end justify-center h-[80%] items-start">
-                <div className="md:text-[30px] text-[18px] pb-2 font-semibold uppercase tracking-widest text-orange-500">
-                  {prod.name}
+              <div className="  w-full md:w-[80%] relative  flex justify-between bg-gray-100 mx-auto h-[35vh] md:h-[70vh] ">
+                <div className="w-[45%] flex flex-col  md:justify-end justify-center h-[80%] items-start">
+                  <div className="md:text-[30px] text-[18px] pb-2 font-semibold uppercase tracking-widest text-orange-500">
+                    {prod.name}
+                  </div>
+                  <p className=" text-black-400 text-[14px]">{prod.decs}</p>
                 </div>
-                <p className=" text-black-400 text-[14px]">{prod.decs}</p>
-              </div>
-              <div className="w-[45%] flex  justify-center items-center h-[100%]">
-                <img src={prod.img} alt="" />
+                <div className="w-[45%] flex  justify-center items-center h-[100%]">
+                  <img src={prod.img} alt="" />
+                </div>
               </div>
             </div>
-            </div>
-            
           </SwiperSlide>
         );
       })}

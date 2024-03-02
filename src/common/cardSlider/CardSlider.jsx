@@ -21,7 +21,7 @@ import mangocratemagnet from "./images/mangocratemagnet.jpg";
 import panipurimagnet from "./images/panipurimagnet.jpg";
 import samosamagnet from "./images/samosamagnet.jpg";
 import teamagnet from "./images/teamagnet.jpg";
-const ProductDesSlider = () => {
+const CardSlider = () => {
   const allProducts = [
     {
       name: "Biryani Magnet",
@@ -108,4 +108,4 @@ const ProductDesSlider = () => {
   );
 };
 
-export default ProductDesSlider;
+export default CardSlider;
