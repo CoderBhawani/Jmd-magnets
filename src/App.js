@@ -7,6 +7,9 @@ import About from "./screens/about/page";
 import TermsAndConditions from "./screens/termscondition/TermsAndCondition";
 import Contact from "./screens/contact/Contact";
 import ProductDetials from "./screens/store/store";
+import CartPage from "./screens/cart/Cart";
+import SignIn from "./common/signIn/SignIn";
+import Profile from "./screens/profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -19,21 +22,32 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About/>,
-        
+        element: <About />,
       },
       {
-        path : "/store/:slug?",
-        element : <ProductDetials/>
+        path: "/signin",
+        element: <SignIn />,
       },
       {
-        path : "/terms-condition",
-        element : <TermsAndConditions/>
+        path: "/store/:slug?",
+        element: <ProductDetials />,
       },
       {
-        path :"/contact",
-        element :<Contact/>
-      }
+        path: "/terms-condition",
+        element: <TermsAndConditions />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/checkout/cart",
+        element: <CartPage />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
     ],
   },
 ]);

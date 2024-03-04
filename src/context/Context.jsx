@@ -134,7 +134,7 @@ const ProductHolder = (props) => {
       product_name: "Kaaju Katli Magnet",
       product_decs: "How absolutely adorable is this fridge magnet? Make your boring fridge look cool with these lovely fridge magnets! Bring out the inner foodie in you and add some fun to your kitchen with these magnets!",
       product_img: kaajukatlimagnet,
-      product_slug: "Kaaju Katli-magnet",
+      product_slug: "kaaju-katli-magnet",
       product_price : "999",
       product_finalPrice: "599",
       product_discount : "40%",

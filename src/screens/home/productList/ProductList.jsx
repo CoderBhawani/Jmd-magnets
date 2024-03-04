@@ -22,7 +22,7 @@ const ProductList = () => {
             </Link>
             <div className="w-[80%] flex justify-start flex-col items-start">
               <div className="w-[100%] flex flex-col items-start">
-                <Link to={`/${pro.product_slug}`} className="text-center py-2 font-[400] text-[14px] hover:cursor-pointer hover:text-black-500 hover:font-bold duration-500 hover:translate-x-2">
+                <Link to={`/store/${pro.product_slug}`} className="text-center py-2 font-[400] text-[14px] hover:cursor-pointer hover:text-black-500 hover:font-bold duration-500 hover:translate-x-2">
                   {pro.product_name}
                 </Link>
                 <Link to={`/store/${pro.product_slug}`}>

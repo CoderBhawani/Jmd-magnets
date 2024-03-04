@@ -1,0 +1,10 @@
+.signinBanner {
+  background-image: url(./signInImg/signBanner.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.signin-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
