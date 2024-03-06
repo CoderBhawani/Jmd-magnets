@@ -3,7 +3,7 @@ import { FiShoppingCart, FiSearch, FiHeart } from "react-icons/fi";
 import logo from "./IMAGE/JMD-removebg-preview.png";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ onWishlistClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
