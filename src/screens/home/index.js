@@ -9,6 +9,8 @@ import OurFacilities from './ourFacilties/OurFacilities'
 import ProductDesSlider from '../../common/cardSlider/CardSlider'
 import AddToCartPage from '../../component/addCart'
 import ProductList from "./productList/index"
+import ContactForm from '../../component/addCart/form'
+
 
 
 const Home = () => {
@@ -16,6 +18,7 @@ const Home = () => {
     <div className='w-full'>
 <Navbar/>
 <HomeSlider/>
+<ContactForm/>
 {/* <AddToCartPage/> */}
 <ProductList/>
 <OurFacilities/>
